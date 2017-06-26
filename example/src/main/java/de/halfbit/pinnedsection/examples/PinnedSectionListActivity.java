@@ -42,8 +42,6 @@ import de.halfbit.pinnedsection.examples.pinnedsection.R;
 
 public class PinnedSectionListActivity extends ListActivity implements OnClickListener {
     static class SimpleAdapter extends ArrayAdapter<Item> implements PinnedSectionListAdapter {
-
-
         private static final int[] COLORS = new int[] {
             R.color.green_light, R.color.orange_light,
             R.color.blue_light, R.color.red_light };
@@ -109,7 +107,7 @@ public class PinnedSectionListActivity extends ListActivity implements OnClickLi
         }
 
     }
-
+    int sj;
     static class FastScrollAdapter extends SimpleAdapter implements SectionIndexer {
 
         private Item[] sections;
